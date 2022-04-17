@@ -19,15 +19,15 @@ class StatisticsServiceTest {
     }
 
     @Test
-    void findMaxN() {
+    void findMaxFin() {
         StatisticsService service = new StatisticsService();
 
-        long[] incomesInBillions = {17000, 11, 800, 4, 20, 1};
-        long expectedN = 17000;
+        long[] incomesInBillions = {12, 11, 800, 4, 20, 17000};
+        long expectedMaxFin = 17000;
 
-        long actualN = service.findMax(incomesInBillions);
+        long actualMaxFin = service.findMax(incomesInBillions);
 
-        assertEquals(expectedN, actualN);
+        assertEquals(expectedMaxFin, actualMaxFin);
     }
 
 }
